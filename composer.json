@@ -1,7 +1,7 @@
 {
   "autoload": {
     "psr-4": {
-      "Refact\\Plugin_Name_Core\\": [
+      "Refact\\": [
         "src/"
       ]
     },
