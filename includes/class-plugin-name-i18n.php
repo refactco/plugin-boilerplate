@@ -6,11 +6,14 @@
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @link       https://redact.co
- * @since      1.0.0
+ * php version 7.4+
  *
+ * @category   Plugin
  * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @subpackage Plugin_Name/admin/partials
+ * @author     Refact <dev@refact.co>
+ * @license    GPL-2.0+ http://www.gnu.org/licenses/gpl-2.0.txt
+ * @link       https://refact.co/
  */
 
 /**
@@ -19,29 +22,30 @@
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @since      1.0.0
+ * @category   Plugin
  * @package    Plugin_Name
  * @subpackage Plugin_Name/includes
- * @author     Refact<info@redact.co>
+ * @author     Refact <info@refact.co>
+ * @license    GPL-2.0+ http://www.gnu.org/licenses/gpl-2.0.txt
+ * @link       https://refact.co/
+ * @since      1.0.0
  */
-class Plugin_Name_i18n {
-
+class Plugin_Name_i18n
+{
 
 	/**
 	 * Load the plugin text domain for translation.
 	 *
 	 * @since    1.0.0
+	 * @return void
 	 */
-	public function load_plugin_textdomain() {
+	public function load_plugin_textdomain()
+	{
 
 		load_plugin_textdomain(
 			'plugin-name',
 			false,
-			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
+			dirname(dirname(plugin_basename(__FILE__))) . '/languages/'
 		);
-
 	}
-
-
-
 }
