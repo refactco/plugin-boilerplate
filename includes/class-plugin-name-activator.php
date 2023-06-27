@@ -1,4 +1,10 @@
 <?php
+/**
+ * The file contains the plugin activation class.
+ *
+ * @package    Plugin_Name
+ * @since      1.0.0
+ */
 
 /**
  * Fired during plugin activation.
@@ -13,8 +19,8 @@
  * @link       https://refact.co/
  * @since      1.0.0
  */
-class Plugin_Name_Activator
-{
+class Plugin_Name_Activator {
+
 
 	/**
 	 * Short Description. (use period)
@@ -23,7 +29,5 @@ class Plugin_Name_Activator
 	 *
 	 * @since    1.0.0
 	 */
-	public static function activate()
-	{
-	}
+	public static function activate() {     }
 }

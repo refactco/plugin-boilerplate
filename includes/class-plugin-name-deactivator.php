@@ -1,5 +1,12 @@
 <?php
 /**
+ * The file contains the plugin deactivation class.
+ *
+ * @package    Plugin_Name
+ * @since      1.0.0
+ */
+
+/**
  * Fired during plugin deactivation.
  *
  * This class defines all code necessary to run during the plugin's deactivation.
@@ -12,18 +19,16 @@
  * @link       https://refact.co/
  * @since      1.0.0
  */
-class Plugin_Name_Deactivator
-{
+class Plugin_Name_Deactivator {
 
-    /**
-    * Short Description. (use period)
+
+	/**
+	 * Short Description. (use period)
 	 *
 	 * Long Description.
 	 *
 	 * @since    1.0.0
 	 * @return void
 	 */
-	public static function deactivate()
-	{
-	}
+	public static function deactivate() {   }
 }

@@ -1,5 +1,12 @@
 <?php
 /**
+ * The file contains the plugin internationalization class.
+ *
+ * @package    Plugin_Name
+ * @since      1.0.0
+ */
+
+/**
  * Define the internationalization functionality.
  *
  * Loads and defines the internationalization files for this plugin
@@ -13,8 +20,8 @@
  * @link       https://refact.co/
  * @since      1.0.0
  */
-class Plugin_Name_i18n
-{
+class Plugin_Name_I18n {
+
 
 	/**
 	 * Load the plugin text domain for translation.
@@ -22,13 +29,11 @@ class Plugin_Name_i18n
 	 * @since    1.0.0
 	 * @return void
 	 */
-	public function load_plugin_textdomain()
-	{
-
+	public function load_plugin_textdomain() {
 		load_plugin_textdomain(
 			'plugin-name',
 			false,
-			dirname(dirname(plugin_basename(__FILE__))) . '/languages/'
+			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);
 	}
 }

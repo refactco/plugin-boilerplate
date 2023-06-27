@@ -1,4 +1,10 @@
 <?php
+/**
+ * The file contains the public-facing class.
+ *
+ * @package    Plugin_Name
+ * @since      1.0.0
+ */
 
 /**
  * The public-facing functionality of the plugin.
@@ -14,39 +20,38 @@
  * @link       https://refact.co/
  * @since      1.0.0
  */
-class Plugin_Name_Public
-{
+class Plugin_Name_Public {
+
 
 	/**
 	 * The ID of this plugin.
 	 *
 	 * @since  1.0.0
 	 * @access private
-	 * @var    string    $_plugin_name    The ID of this plugin.
+	 * @var    string    $plugin_name    The ID of this plugin.
 	 */
-	private $_plugin_name;
+	private $plugin_name;
 
 	/**
 	 * The version of this plugin.
 	 *
 	 * @since  1.0.0
 	 * @access private
-	 * @var    string    $_version    The current version of this plugin.
+	 * @var    string    $version    The current version of this plugin.
 	 */
-	private $_version;
+	private $version;
 
 	/**
 	 * Initialize the class and set its properties.
 	 *
 	 * @since 1.0.0
-	 * @param string    $_plugin_name       The name of the plugin.
-	 * @param string    $_version    The version of this plugin.
+	 * @param string $plugin_name       The name of the plugin.
+	 * @param string $version    The version of this plugin.
 	 */
-	public function __construct($plugin_name, $version)
-	{
+	public function __construct( $plugin_name, $version ) {
 
-		$this->_plugin_name = $plugin_name;
-		$this->_version     = $version;
+		$this->plugin_name = $plugin_name;
+		$this->version     = $version;
 	}
 
 	/**
@@ -55,9 +60,7 @@ class Plugin_Name_Public
 	 * @since    1.0.0
 	 * @return    void
 	 */
-	public function enqueue_styles()
-	{
-
+	public function enqueue_styles() {
 		/**
 		 * This function is provided for demonstration purposes only.
 		 *
@@ -70,19 +73,17 @@ class Plugin_Name_Public
 		 * class.
 		 */
 
-		wp_enqueue_style($this->_plugin_name, plugin_dir_url(__FILE__) . 'css/plugin-name-public.css', array(), $this->_version, 'all');
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/plugin-name-public.css', array(), $this->version, 'all' );
 	}
 
 	/**
 	 * Register the JavaScript for the public-facing side of the site.
 	 *
 	 * @since    1.0.0
-	 * 
+	 *
 	 * @return void
 	 */
-	public function enqueue_scripts()
-	{
-
+	public function enqueue_scripts() {
 		/**
 		 * This function is provided for demonstration purposes only.
 		 *
@@ -95,6 +96,6 @@ class Plugin_Name_Public
 		 * class.
 		 */
 
-		wp_enqueue_script($this->_plugin_name, plugin_dir_url(__FILE__) . 'js/plugin-name-public.js', array('jquery'), $this->_version, false);
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/plugin-name-public.js', array( 'jquery' ), $this->version, false );
 	}
 }
