@@ -1,21 +1,6 @@
 <?php
 
 /**
- * The Public Class
- *
- * The public-facing functionality of the plugin.
- *
- * php version 7.4+
- *
- * @category   Plugin
- * @package    Plugin_Name
- * @subpackage Plugin_Name/admin/partials
- * @author     Refact <dev@refact.co>
- * @license    GPL-2.0+ http://www.gnu.org/licenses/gpl-2.0.txt
- * @link       https://refact.co/
- */
-
-/**
  * The public-facing functionality of the plugin.
  *
  * Defines the plugin name, version, and two examples hooks for how to
