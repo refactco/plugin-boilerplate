@@ -35,10 +35,6 @@
 	<exclude-pattern>/vendor/*</exclude-pattern>
 	<exclude-pattern>/node_modules/*</exclude-pattern>
 
-	<rule ref="PEAR">
-	<exclude name="PEAR.NamingConventions.ValidFunctionName.FunctionNoCapital" />
-	</rule>
-
 	<!--
 	#############################################################################
 	USE THE WordPress AND THE Theme Review RULESET
@@ -46,11 +42,6 @@
 	-->
 
 	<rule ref="WordPress">
-		<!-- This rule does not apply here since the _s prefix should be changed by the theme author. -->
-		<exclude name="WordPress.NamingConventions.PrefixAllGlobals.ShortPrefixPassed"/>
-		<!-- Aligning arrays is annoying with the code sniffer, lets skip it -->
-		<exclude name="WordPress.Arrays.ArrayIndentation.ItemNotAligned"/>
-		<exclude name="WordPress.PHP.StrictInArray.MissingTrueStrict"/>
 	</rule>
 
 	<!--
@@ -59,45 +50,6 @@
 	#############################################################################
 	-->
 	
-	<rule ref="WordPress.WP.EnqueuedResources.NonEnqueuedScript">
-		<type>warning</type>
-	</rule>
-	
-	<rule ref="Squiz.Commenting.InlineComment.InvalidEndChar">
-		<type>warning</type>
-	</rule>
-
-	<rule ref="Squiz.Commenting.FunctionComment.MissingParamComment">
-		<type>warning</type>
-	</rule>
-
-	<rule ref="Squiz.Commenting.FunctionComment.SpacingAfterParamType">
-		<type>warning</type>
-	</rule>
-
-	<rule ref="Squiz.Commenting.FunctionComment.SpacingAfter">
-		<type>warning</type>
-	</rule>
-
-	<rule ref="Squiz.Commenting.FileComment.SpacingAfterComment">
-		<type>warning</type>
-	</rule>
-
-	<rule ref="Squiz.Commenting.FileComment.Missing">
-		<type>warning</type>
-	</rule>
-
-	<rule ref="PHPCompatibility.Syntax.NewShortArray.Found">
-		<type>warning</type>
-	</rule>
-
-	<rule ref="PHPCompatibility.Operators.NewOperators.t_coalesceFound">
-		<type>warning</type>
-	</rule>
-
-	<rule ref="Generic.Arrays.DisallowShortArraySyntax.Found">
-		<type>warning</type>
-	</rule>
 
 	<!--
 	#############################################################################
