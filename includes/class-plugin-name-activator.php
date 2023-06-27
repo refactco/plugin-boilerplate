@@ -1,18 +1,9 @@
 <?php
-
 /**
- * Fired during plugin activation
+ * The file contains the plugin activation class.
  *
- * This class defines all code necessary to run during the plugin's activation.
- *
- * php version 7.4+
- *
- * @category   Plugin
  * @package    Plugin_Name
- * @subpackage Plugin_Name/admin/partials
- * @author     Refact <dev@refact.co>
- * @license    GPL-2.0+ http://www.gnu.org/licenses/gpl-2.0.txt
- * @link       https://refact.co/
+ * @since      1.0.0
  */
 
 /**
@@ -28,8 +19,8 @@
  * @link       https://refact.co/
  * @since      1.0.0
  */
-class Plugin_Name_Activator
-{
+class Plugin_Name_Activator {
+
 
 	/**
 	 * Short Description. (use period)
@@ -38,7 +29,5 @@ class Plugin_Name_Activator
 	 *
 	 * @since    1.0.0
 	 */
-	public static function activate()
-	{
-	}
+	public static function activate() {     }
 }

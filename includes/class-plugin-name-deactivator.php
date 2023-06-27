@@ -1,18 +1,9 @@
 <?php
-
 /**
- * Fired during plugin deactivation
+ * The file contains the plugin deactivation class.
  *
- * This class defines all code necessary to run during the plugin's deactivation.
- *
- * php version 7.4+
- *
- * @category   Plugin
  * @package    Plugin_Name
- * @subpackage Plugin_Name/admin/partials
- * @author     Refact <dev@refact.co>
- * @license    GPL-2.0+ http://www.gnu.org/licenses/gpl-2.0.txt
- * @link       https://refact.co/
+ * @since      1.0.0
  */
 
 /**
@@ -28,18 +19,16 @@
  * @link       https://refact.co/
  * @since      1.0.0
  */
-class Plugin_Name_Deactivator
-{
+class Plugin_Name_Deactivator {
 
-    /**
-    * Short Description. (use period)
+
+	/**
+	 * Short Description. (use period)
 	 *
 	 * Long Description.
 	 *
 	 * @since    1.0.0
 	 * @return void
 	 */
-	public static function deactivate()
-	{
-	}
+	public static function deactivate() {   }
 }
