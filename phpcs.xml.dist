@@ -35,10 +35,6 @@
 	<exclude-pattern>/vendor/*</exclude-pattern>
 	<exclude-pattern>/node_modules/*</exclude-pattern>
 
-	<rule ref="PEAR">
-	<exclude name="PEAR.NamingConventions.ValidFunctionName.FunctionNoCapital" />
-	</rule>
-
 	<!--
 	#############################################################################
 	USE THE WordPress AND THE Theme Review RULESET
@@ -46,11 +42,6 @@
 	-->
 
 	<rule ref="WordPress">
-		<!-- This rule does not apply here since the _s prefix should be changed by the theme author. -->
-		<exclude name="WordPress.NamingConventions.PrefixAllGlobals.ShortPrefixPassed"/>
-		<!-- Aligning arrays is annoying with the code sniffer, lets skip it -->
-		<exclude name="WordPress.Arrays.ArrayIndentation.ItemNotAligned"/>
-		<exclude name="WordPress.PHP.StrictInArray.MissingTrueStrict"/>
 	</rule>
 
 	<!--
@@ -59,45 +50,6 @@
 	#############################################################################
 	-->
 	
-	<rule ref="WordPress.WP.EnqueuedResources.NonEnqueuedScript">
-		<type>warning</type>
-	</rule>
-	
-	<rule ref="Squiz.Commenting.InlineComment.InvalidEndChar">
-		<type>warning</type>
-	</rule>
-
-	<rule ref="Squiz.Commenting.FunctionComment.MissingParamComment">
-		<type>warning</type>
-	</rule>
-
-	<rule ref="Squiz.Commenting.FunctionComment.SpacingAfterParamType">
-		<type>warning</type>
-	</rule>
-
-	<rule ref="Squiz.Commenting.FunctionComment.SpacingAfter">
-		<type>warning</type>
-	</rule>
-
-	<rule ref="Squiz.Commenting.FileComment.SpacingAfterComment">
-		<type>warning</type>
-	</rule>
-
-	<rule ref="Squiz.Commenting.FileComment.Missing">
-		<type>warning</type>
-	</rule>
-
-	<rule ref="PHPCompatibility.Syntax.NewShortArray.Found">
-		<type>warning</type>
-	</rule>
-
-	<rule ref="PHPCompatibility.Operators.NewOperators.t_coalesceFound">
-		<type>warning</type>
-	</rule>
-
-	<rule ref="Generic.Arrays.DisallowShortArraySyntax.Found">
-		<type>warning</type>
-	</rule>
 
 	<!--
 	#############################################################################
@@ -113,11 +65,11 @@
 		</properties>
 	</rule>
 
-	<!-- Allow for theme specific exceptions to the file name rules based
-		 on the theme hierarchy. -->
+	<!-- Allow for Plugin specific exceptions to the file name rules based
+		 on the plugin hierarchy. -->
 	<rule ref="WordPress.Files.FileName">
 		<properties>
-			<property name="is_theme" value="true"/>
+			<property name="is_theme" value="false"/>
 		</properties>
 	</rule>
 
@@ -126,16 +78,6 @@
 		 as set in the "Requires at least" tag in the readme.txt file. -->
 	<config name="minimum_supported_wp_version" value="4.5"/>
 
-	<rule ref="WordPress.Arrays.MultipleStatementAlignment">
-		<properties>
-			<!-- No need to adjust alignment of large arrays when the item with the largest key is removed. -->
-			<property name="exact" value="false"/>
-			<!-- Don't align multi-line items if ALL items in the array are multi-line. -->
-			<property name="alignMultilineItems" value="!=100"/>
-			<!-- Array assignment operator should always be on the same line as the array key. -->
-			<property name="ignoreNewlines" value="false"/>
-		</properties>
-	</rule>
 
 	<!-- Verify that everything in the global namespace is prefixed with a plugin specific prefix.
 		 Multiple valid prefixes can be provided as a comma-delimited list. -->
