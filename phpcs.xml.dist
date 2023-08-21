@@ -41,7 +41,8 @@
 	#############################################################################
 	-->
 
-	<rule ref="WordPress">
+	<rule ref="WordPress.Files.FileName">
+	<exclude-pattern>/src/*</exclude-pattern>
 	</rule>
 
 	<!--
